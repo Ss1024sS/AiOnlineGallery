@@ -127,3 +127,10 @@ body {
     margin: 5px 0; /* 调整间距 */
     color: white; /* 根据需要设置颜色 */
 }
+
+#audio-controls {
+    position: fixed; /* 固定位置 */
+    bottom: 10px; /* 距离底部10px */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 精确居中 */
+}
