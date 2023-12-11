@@ -74,23 +74,56 @@ body {
 }
 
 .artist-card {
-    background-color: #000000; /* 深灰色背景 */
+    background-color: #000000;
     color: white;
     font-family: 'Courier New';
     padding: 20px;
     margin: 20px;
-    /* 其他样式如边框、阴影等 */
+}
+
+.artist-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .artist-portrait {
-    width: 10%; /* 或根据实际需要调整百分比 */
-    height: 20%;
-    border-radius: 50%; /* 圆形图片 */
-    margin-bottom: 2%; /* 根据需要调整间隔 */
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.artist-card h2 {
+    text-align: center;
+}
+
+.artworks-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
 }
 
 .artist-card img {
-    width: 30%; /* 艺术作品图片的宽度 */
+    width: 30%;
     height: auto;
-    margin: 1%; /* 图片间隔 */
+    margin: 1%;
+}
+
+.artist-card p{
+    text-align: center;
+}
+
+.artwork {
+    width: 30%;
+    text-align: center; /* 使作品信息居中 */
+}
+
+.artwork img {
+    width: 100%; /* 使图片填满容器 */
+    height: auto;
+}
+
+.artwork-info p {
+    margin: 5px 0; /* 调整间距 */
+    color: white; /* 根据需要设置颜色 */
 }
