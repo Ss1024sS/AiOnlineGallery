@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gallery'Eliza'</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { margin: 0; }
+    </style>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.bootcdn.net/ajax/libs/three.js/0.159.0/three.module.js",
+            "three/addons/controls/OrbitControls": "https://threejs.org/examples/jsm/controls/OrbitControls.js",
+            "three/addons/loaders/GLTFLoader": "https://threejs.org/examples/jsm/loaders/GLTFLoader.js"
+          }
+        }
+      </script>
+      
+</head>
+<body>
+    <div id="model-container">
+        <!-- 这里是Three.js渲染器注入的位置 -->
+    </div>
+    <div id="left-title">Gallery</div>
+    <div id="right-title">'Eliza'</div>
+    <button id="explore-button">Enter</button> <!-- 添加的按钮 -->
+      
+    <script type="module" src="main.js"></script>
+
+</body>
+</html>

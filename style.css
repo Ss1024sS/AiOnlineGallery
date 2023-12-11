@@ -1,0 +1,96 @@
+body { margin: 0; }
+canvas { display: flexbox; }
+
+/* 在style.css文件中 */
+/* 仅针对标题设置样式 */
+/* CSS样式 */
+#left-title, #right-title {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Courier New';
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+  }
+  
+#left-title {
+    left: 13%;  /* 根据需要调整位置 */
+    }
+  
+#right-title {
+    right: 13%;  /* 根据需要调整位置 */
+  }
+  
+#explore-button {
+    position: absolute;
+    bottom: 20px; /* 按需调整位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    /* 按钮样式，可根据设计需求调整 */
+    padding: 10px;
+    font-family: 'Courier New';
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+/* for index2 */
+
+
+/* 设置全黑背景 */
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Courier New';
+    /* 去掉background-color或设置为transparent */
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+
+.intro p {
+    color: white; /* 文字颜色 */
+    opacity: 0;
+    font-family: 'Courier New';
+    transition: opacity 2s ease-in-out;
+}
+
+.artist-card {
+    background-color: #000000; /* 深灰色背景 */
+    color: white;
+    font-family: 'Courier New';
+    padding: 20px;
+    margin: 20px;
+    /* 其他样式如边框、阴影等 */
+}
+
+.artist-portrait {
+    width: 10%; /* 或根据实际需要调整百分比 */
+    height: 20%;
+    border-radius: 50%; /* 圆形图片 */
+    margin-bottom: 2%; /* 根据需要调整间隔 */
+}
+
+.artist-card img {
+    width: 30%; /* 艺术作品图片的宽度 */
+    height: auto;
+    margin: 1%; /* 图片间隔 */
+}
